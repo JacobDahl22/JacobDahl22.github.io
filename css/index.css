@@ -29,7 +29,7 @@ a:hover {
 }
 
 #nbsp {
-    font-size: 100px;
+    font-size: 30px;
 }
 
 h1 {
@@ -40,4 +40,17 @@ h1 {
 p {
     text-align: center;
     font-size: 25px;
+}
+
+#logo {
+    font-size: 150px;
+    margin: 0;
+    padding: 0;
+    height: 190px;
+}
+
+#logodef {
+    font-size: 15px;
+    margin: 0;
+    margin-bottom: 30px;
 }
