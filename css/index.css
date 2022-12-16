@@ -1,7 +1,18 @@
 html {
-    background: linear-gradient(to bottom right, #ff00d4, #00ddff);
-    height: 100%;
+    min-height: 100%;
+    min-width: 99%;
+    position: relative;
+}
+
+body {
+    min-width: 99%;
+    position: relative;
     font-family: 'Oswald', sans-serif;
+    background: linear-gradient(to bottom right, #ff00d4, #00ddff);
+    background-attachment: fixed;
+    text-align: center;
+    min-height: 100%;
+    margin: 0;
 }
 
 a {
@@ -43,14 +54,15 @@ p {
 }
 
 #logo {
-    font-size: 150px;
+    font-size: 120px;
     margin: 0;
-    padding: 0;
     height: 190px;
+    text-align: center;
 }
 
 #logodef {
     font-size: 15px;
     margin: 0;
     margin-bottom: 30px;
+    margin-top: -20px;
 }
