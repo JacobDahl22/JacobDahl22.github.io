@@ -5,11 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
-    <title>Rules</title>
+    <title>Waiting Room</title>
 </head>
 <body>
     <h1>Welcome to the Waiting Room</h1>
-    <p>Room Code: 12345</p>
-    <a href="index.html">Return</a>
+    <p id="roomcode">Room Code: </p>
+    <a href="index.html">Back</a>
+    <script>
+        window.onload = function(){
+            room_code = Math.floor(Math.random()*90000) + 10000;
+            console.log(room_code)
+            sessionStorage.setItem('roomcode', room_code);
+            document.getElementById('roomcode').innerText = "Room Code: " + room_code;
+        }
+    </script>
 </body>
 </html>

@@ -15,12 +15,23 @@
     <h1 id="logo">FlubDub</h1>
     <p id="logodef"><i>noun. US informal.</i> nonsense; inept speech; empty talk; bunkum.</p>
     <p id="nbsp">&nbsp</p>
+    <div id="roomcode-modal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Enter your room code here!</p>
+          <input type="text">
+          <a>Join</a>
+        </div>
+      </div>
     <div id="starting-btns">
         <a href="waiting-room.html">Play</a>
-        <a id="join-room-btn">Enter a Room Code</a>
+        <a href="#" id="join-room-btn">Enter a Room Code</a>
         <a href="rules.html">How to Play</a>
-        <a>Exit</a>
     </div>
     <script src="js/joingame.js"></script>
+    <script>
+        var cur_roomcode = sessionStorage.getItem('roomcode');
+    </script>
 </body>
 </html>
